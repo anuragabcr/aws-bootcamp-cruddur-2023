@@ -2,8 +2,9 @@ import './App.css';
 
 import HomeFeedPage from './pages/HomeFeedPage';
 import UserFeedPage from './pages/UserFeedPage';
-import SignupPage from './pages/SignupPage';
+import NotificationsPage from './pages/NotificationsPage';
 import SigninPage from './pages/SigninPage';
+import SignupPage from './pages/SignupPage';
 import RecoverPage from './pages/RecoverPage';
 import MessageGroupsPage from './pages/MessageGroupsPage';
 import MessageGroupPage from './pages/MessageGroupPage';
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeFeedPage />
+  },
+  {
+    path: "/notifications",
+    element: <NotificationsPage />
   },
   {
     path: "/@:handle",
